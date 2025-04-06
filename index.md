@@ -6,7 +6,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
-title: home
+title: About
 ---
 
 Hello! I’m Taewoong Yoon, a Ph.D. candidate in Physics at **Seoul National University (SNU)**, working under the guidance of **Prof. Hyunyong Choi**. 
