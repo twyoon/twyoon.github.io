@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-You can download my CV from the link below:  
+You can download my full CV from the link below.  
 [Download CV](../assets/CV_Taewoong_Yoon.pdf)
 
 ***
@@ -44,15 +44,15 @@ Jun 2016 - Aug 2016
 ***
 ### **Conferences & presentations**
 #### Oral Presentations
-1. “Probing and controlling many-body dipolar interactions between electron spins in diamond”, *KPS Spring Meeting*, Daejeon, Korea, Apr 2024.  
-2. “Precise calibration of magnetic field vector in a diamond nitrogen-vacancy center ensemble”, *Optics and Photonics Congress (OPC)*, Jeju, Korea, Aug 2023.  
-3. “Aberration correction of femtosecond lasers for deterministic quantum emitters in nitrogen-vacancy diamonds”, *Optics and Photonics Congress (OPC)*, Jeju, Korea, Jul 2021.  
+1. Probing and controlling many-body dipolar interactions between electron spins in diamond, *KPS Spring Meeting*, Daejeon, Korea, Apr 2024.  
+1. Precise calibration of magnetic field vector in a diamond nitrogen-vacancy center ensemble, *Optics and Photonics Congress (OPC)*, Jeju, Korea, Aug 2023.  
+1. Aberration correction of femtosecond lasers for deterministic quantum emitters in nitrogen-vacancy diamonds, *Optics and Photonics Congress (OPC)*, Jeju, Korea, Jul 2021.  
 
 #### Poster Presentations
-1. “Deterministic creation of single nitrogen-vacancy center in diamond using femtosecond laser writing”,  *Conference on Lasers and Electro-Optics (CLEO)*, San Jose, USA,  May 2022.  
+1. Deterministic creation of single nitrogen-vacancy center in diamond using femtosecond laser writing,  *Conference on Lasers and Electro-Optics (CLEO)*, San Jose, USA,  May 2022.  
 
 ***
 ### **Honors & awards**
-1. BK Excellent TA award, Jul 2020  
-2. BK Frontier Fellowship, Mar 2019 - Aug 2019  
-3. The National Scholarship for Science and Engineering, Mar 2014 - Feb 2018  
+1. BK Excellent TA award <span style="float: right;">Jul 2020</span> 
+1. BK Frontier Fellowship <span style="float: right;">Mar 2019 - Aug 2019</span>  
+1. The National Scholarship for Science and Engineering <span style="float: right;">Mar 2014 - Feb 2018</span>  
