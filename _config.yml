@@ -4,6 +4,9 @@ email: twyoon@snu.ac.kr
 description: > # this means to ignore newlines until "twitter_username:"
   Personal website of Taewoong Yoon
 
+baseurl: ""
+url: "https://twyoon.github.io"
+
 # social links
 #twitter_username: jekyllrb
 #github_username:  jekyll
@@ -46,3 +49,4 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-sitemap
