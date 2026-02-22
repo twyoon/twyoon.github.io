@@ -7,52 +7,51 @@ permalink: /cv/
 You can download my full CV from the link below.  
 [Download CV](../assets/CV_Taewoong_Yoon.pdf)
 
-***
+---
 ### **Education**
 **Seoul National University (SNU), Seoul, Korea**  
-MS/Ph.D Candidate in Physics, Mar 2019 - Present  
+Ph.D Candidate in Physics, Mar 2019 – Present  
 Thesis Advisor: Prof. Hyunyong Choi
 
 **Pohang University of Science and Technology (POSTECH), Pohang, Korea**  
-Bachelor of Science (BS) in Physics, Mar 2014 - Feb 2019
+Bachelor of Science (BS) in Physics, Mar 2014 – Feb 2019
 
 **Seoul Science High School (SSHS), Seoul, Korea**  
-Mar 2011 - Feb 2014
+Mar 2011 – Feb 2014
 
-***
+---
 ### **Research Interests**
-Quantum Optics, Quantum Sensing, Quantum Simulation, Diamond NV Center 
+Quantum Sensing, Quantum Simulation, Diamond NV Centers
 
-***
+---
 ### **Research Experience**
-**Ultrafast Quantum Photonics Laboratory, SNU**  
-Graduate Research Assistant (Advisor: Prof. Hyunyong Choi)  
-Aug 2019 - Present  
+**Korea Institute of Science and Technology (KIST), Seoul, Korea**  
+Visiting Researcher (Advisor: Dr. Junghyun Lee), Feb 2026 – Present
 
-**Quantum-Field Laser Laboratory, SNU**  
-Undergraduate Research Intern (Advisor: Prof. Kyungwon An)  
-Jun 2018 - Aug 2018  
+**Seoul National University (SNU), Seoul, Korea**  
+Graduate Research Assistant (Advisor: Prof. Hyunyong Choi), Aug 2019 – Present
 
-**Quantum Optics & Quantum Information Group, POSTECH**  
-Undergraduate Research Intern (Advisor: Prof. Yoonho Kim)  
-Sep 2016 - Aug 2017  
+---
+### **Publications**
+1. **Taewoong Yoon**, Sangwon Oh, Junghyun Lee, and Hyunyong Choi, "Mesoscopic Spin Coherence in a Disordered Dark Electron Spin Ensemble," [*arXiv:2602.17074* (2026)](https://doi.org/10.48550/arXiv.2602.17074).
 
-**Center for Quantum Information, KIST**  
-Research Intern  
-Jun 2016 - Aug 2016  
+2. **Taewoong Yoon**, Myungjun Cha, Dohun Kim, and Hyunyong Choi, "Identifying NV center axes via spatially varying microwave fields for vector magnetometry," [*Applied Physics Letters* **126**, 144002 (2025)](https://doi.org/10.1063/5.0243162).
 
-***
-### **Conferences & presentations**
+---
+### **Conferences & Presentations**
 #### Oral Presentations
-1. Probing and controlling many-body dipolar interactions between electron spins in diamond, *KPS Spring Meeting*, Daejeon, Korea, Apr 2024.  
-1. Precise calibration of magnetic field vector in a diamond nitrogen-vacancy center ensemble, *Optics and Photonics Congress (OPC)*, Jeju, Korea, Aug 2023.  
-1. Aberration correction of femtosecond lasers for deterministic quantum emitters in nitrogen-vacancy diamonds, *Optics and Photonics Congress (OPC)*, Jeju, Korea, Jul 2021.  
+1. "Polarization of P1 electron spin bath via repetitive Hartmann-Hahn transfer," ***APS Global Physics Summit***, Denver, USA, Mar 2026.
+1. "Probing and controlling many-body dipolar interactions between electron spins in diamond," ***KPS Spring Meeting***, Daejeon, Korea, Apr 2024.
+1. "Precise calibration of magnetic field vector in a diamond nitrogen-vacancy center ensemble," ***Optics and Photonics Congress (OPC)***, Jeju, Korea, Aug 2023.
+1. "Aberration correction of femtosecond lasers for deterministic quantum emitters in nitrogen-vacancy diamonds," ***Optics and Photonics Congress (OPC)***, Jeju, Korea, Jul 2021.
 
 #### Poster Presentations
-1. Deterministic creation of single nitrogen-vacancy center in diamond using femtosecond laser writing,  *Conference on Lasers and Electro-Optics (CLEO)*, San Jose, USA,  May 2022.  
+1. "Deterministic creation of single nitrogen-vacancy center in diamond using femtosecond laser writing," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, USA, May 2022.
 
-***
-### **Honors & awards**
-1. BK Excellent TA award <span style="float: right;">Jul 2020</span> 
-1. BK Frontier Fellowship <span style="float: right;">Mar 2019 - Aug 2019</span>  
-1. The National Scholarship for Science and Engineering <span style="float: right;">Mar 2014 - Feb 2018</span>  
+---
+### **Honors & Awards**
+1. BK Excellent TA Award, Jul 2020
+1. BK Frontier Fellowship, Mar 2019 – Aug 2019
+1. National Scholarship for Science and Engineering, Mar 2014 – Feb 2018
+
+

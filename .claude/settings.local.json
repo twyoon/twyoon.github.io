@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pandoc:*)",
+      "Bash(pdflatex:*)",
+      "Bash(xelatex:*)",
+      "Bash(weasyprint:*)",
+      "Bash(wkhtmltopdf:*)",
+      "Bash(open:*)",
+      "Bash(chmod:*)",
+      "Bash(./generate_cv.sh:*)"
+    ]
+  }
+}
