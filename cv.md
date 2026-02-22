@@ -32,12 +32,6 @@ Visiting Researcher (Advisor: Dr. Junghyun Lee), Feb 2026 – Present
 Graduate Research Assistant (Advisor: Prof. Hyunyong Choi), Aug 2019 – Present
 
 ---
-### **Publications**
-1. **Taewoong Yoon**, Sangwon Oh, Junghyun Lee, and Hyunyong Choi, "Mesoscopic Spin Coherence in a Disordered Dark Electron Spin Ensemble," [*arXiv:2602.17074* (2026)](https://doi.org/10.48550/arXiv.2602.17074).
-
-2. **Taewoong Yoon**, Myungjun Cha, Dohun Kim, and Hyunyong Choi, "Identifying NV center axes via spatially varying microwave fields for vector magnetometry," [*Applied Physics Letters* **126**, 144002 (2025)](https://doi.org/10.1063/5.0243162).
-
----
 ### **Conferences & Presentations**
 #### Oral Presentations
 1. "Polarization of P1 electron spin bath via repetitive Hartmann-Hahn transfer," ***APS Global Physics Summit***, Denver, USA, Mar 2026.

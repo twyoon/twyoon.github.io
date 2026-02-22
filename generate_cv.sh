@@ -26,9 +26,6 @@ cv = re.sub(r'You can download.*?\n\[Download CV\][^\n]*\n', '', cv, flags=re.DO
 # cv.md: 섹션 사이 --- 구분자 제거 (섹션 제목 아래 rule로 대체)
 cv = cv.replace('\n---\n', '\n\n')
 
-# cv.md: Publications 섹션 제거 (publications.md로 대체)
-cv = re.sub(r'### \*\*Publications\*\*.*?(?=### |\Z)', '', cv, flags=re.DOTALL)
-
 # 헤딩 레벨 정규화: ### **Title** → # Title, #### → ##
 cv = re.sub(r'^### \*\*(.+?)\*\*', r'# \1', cv, flags=re.MULTILINE)
 cv = re.sub(r'^#### ', '## ', cv, flags=re.MULTILINE)
