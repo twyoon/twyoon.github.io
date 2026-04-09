@@ -3,9 +3,18 @@ author: Taewoong Yoon
 email: twyoon@snu.ac.kr
 description: > # this means to ignore newlines until "twitter_username:"
   Personal website of Taewoong Yoon
+show_home_posts: false
+show_footer_description: false
 
 baseurl: ""
 url: "https://twyoon.github.io"
+exclude:
+ - Gemfile
+ - Gemfile.lock
+ - generate_cv.sh
+ - minima.gemspec
+ - script
+ - theme_version.rb
 
 # social links
 #twitter_username: jekyllrb

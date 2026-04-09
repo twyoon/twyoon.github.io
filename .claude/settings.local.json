@@ -8,7 +8,12 @@
       "Bash(wkhtmltopdf:*)",
       "Bash(open:*)",
       "Bash(chmod:*)",
-      "Bash(./generate_cv.sh:*)"
+      "Bash(./generate_cv.sh:*)",
+      "Bash(git rm:*)",
+      "Bash(git add:*)",
+      "Bash(git restore:*)",
+      "Bash(git commit:*)",
+      "Bash(bash /Users/tw/Downloads/gitpage/twyoon.github.io/generate_cv.sh 2>&1)"
     ]
   }
 }

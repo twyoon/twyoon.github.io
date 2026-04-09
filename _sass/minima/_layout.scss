@@ -1,3 +1,5 @@
+@use "core" as *;
+
 /**
  * Site header
  */
@@ -251,46 +253,5 @@
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
     }
-  }
-}
-
-// Custom About Section Layout
-.about-container {
-  display: flex;
-  flex-wrap: wrap; /* 자동으로 줄바꿈 */
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1200px; /* 최대 너비 제한 */
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.profile-image {
-  flex: 1 1 40%; /* 넓은 화면에서 2열 비율 */
-  max-width: 400px; /* 이미지 최대 크기 제한 */
-  width: 100%; /* 반응형으로 100% 사용 */
-}
-
-.profile-text {
-  flex: 1 1 55%; /* 넓은 화면에서 2열 비율 */
-  max-width: 600px;
-}
-
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column; /* 1열 레이아웃 */
-    text-align: justify;
-  }
-
-  .profile-image {
-    max-width: 400px; /* 최대 크기 유지 */
-    width: 100%; /* 넓이가 100% 이하로 자동 조정 */
-    margin: 0 auto; /* 가운데 정렬 */
-  }
-
-  .profile-text {
-    max-width: 100%; /* 전체 너비로 확장 */
-    flex: 1 1 100%;  /* 1열 레이아웃으로 강제 */
   }
 }

@@ -1,40 +1,45 @@
 #!/bin/bash
-# cv.md + publications.md → assets/CV_Taewoong_Yoon.pdf
+# cv.md + publications.md -> assets/CV_Taewoong_Yoon.pdf
 set -e
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
 python3 << 'PYEOF'
 import re, subprocess, sys
+from pathlib import Path
 
 def strip_front_matter(text):
-    """Jekyll YAML front matter 제거."""
+    """Remove Jekyll YAML front matter."""
     if text.startswith('---'):
         i = text.find('---', 3)
         if i != -1:
             return text[i + 3:].lstrip('\n')
     return text
 
-cv  = strip_front_matter(open('cv.md').read())
-pub = strip_front_matter(open('publications.md').read())
+root = Path.cwd()
+cv = strip_front_matter((root / 'cv.md').read_text(encoding='utf-8'))
+pub = strip_front_matter((root / 'publications.md').read_text(encoding='utf-8'))
 
-# publications.md: <u>text</u> → [text]{.underline}
+# publications.md: <u>text</u> -> [text]{.underline}
 pub = re.sub(r'<u>(.*?)</u>', r'[\1]{.underline}', pub)
 
-# cv.md: "Download CV" 링크 블록 제거
-cv = re.sub(r'You can download.*?\n\[Download CV\][^\n]*\n', '', cv, flags=re.DOTALL)
+# cv.md: remove web-only PDF download block
+cv = re.sub(r'<p class="cv-download">.*?</p>\s*', '', cv, flags=re.DOTALL)
 
-# cv.md: 섹션 사이 --- 구분자 제거 (섹션 제목 아래 rule로 대체)
+# cv.md: remove legacy section dividers
 cv = cv.replace('\n---\n', '\n\n')
 
-# 헤딩 레벨 정규화: ### **Title** → # Title, #### → ##
-cv = re.sub(r'^### \*\*(.+?)\*\*', r'# \1', cv, flags=re.MULTILINE)
+# Normalize heading levels for PDF output
+cv = re.sub(r'^### ', '# ', cv, flags=re.MULTILINE)
 cv = re.sub(r'^#### ', '## ', cv, flags=re.MULTILINE)
 
-# Publications 섹션 구성 (publications.md 내용 사용)
+# Strip bold markers from headings (already bold in LaTeX)
+cv = re.sub(r'^(#{1,6}) \*\*(.*?)\*\*$', r'\1 \2', cv, flags=re.MULTILINE)
+
+# Build Publications section from publications.md
 pub_section = '# Publications\n\n' + pub.strip() + '\n\n'
 
-# Conferences & Presentations 앞에 삽입
-m = re.search(r'^# Conferences', cv, re.MULTILINE)
+# Insert Publications between Honors and Presentations
+m = re.search(r'^# Presentations', cv, re.MULTILINE)
 if m:
     cv = cv[:m.start()] + pub_section + cv[m.start():]
 else:
@@ -51,16 +56,15 @@ doc = (
     '---\n\n'
 ) + cv.strip() + '\n'
 
-open('/tmp/cv_combined.md', 'w').write(doc)
+temp_md = Path('/tmp/cv_combined.md')
+temp_md.write_text(doc, encoding='utf-8')
 
-import os
-cwd = os.getcwd()
-header = os.path.join(cwd, '_cv_header.tex')
-name   = os.path.join(cwd, '_cv_name.tex')
+header = root / '_cv_header.tex'
+name = root / '_cv_name.tex'
 
 r = subprocess.run(
-    ['pandoc', '/tmp/cv_combined.md',
-     '-o', 'assets/CV_Taewoong_Yoon.pdf',
+    ['pandoc', str(temp_md),
+     '-o', str(root / 'assets/CV_Taewoong_Yoon.pdf'),
      '--pdf-engine=xelatex',
      f'--include-in-header={header}',
      f'--include-before-body={name}'],

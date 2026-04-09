@@ -2,4 +2,93 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minima";
+@use "minima/base";
+@use "minima/layout";
+@use "minima/syntax-highlighting";
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.profile-image {
+  flex: 1 1 40%;
+  max-width: 25rem;
+  width: 100%;
+}
+
+.responsive-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.profile-text {
+  flex: 1 1 55%;
+  max-width: 38rem;
+}
+
+.cv-download {
+  margin-bottom: 1.5rem;
+}
+
+.cv-section {
+  margin-top: 2rem;
+}
+
+.cv-section h2,
+.cv-section h3 {
+  margin-bottom: 0.75rem;
+}
+
+.cv-list {
+  margin-left: 1.25rem;
+}
+
+.site-footer .footer-col-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-left: 0;
+}
+
+.site-footer .footer-col {
+  float: none;
+  width: auto;
+  min-width: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.site-footer .footer-col-1 {
+  flex: 1 1 16rem;
+}
+
+.site-footer .footer-col-2 {
+  flex: 1 1 18rem;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .profile-image,
+  .profile-text {
+    max-width: 100%;
+  }
+
+  .profile-image {
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+}
