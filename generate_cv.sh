@@ -28,10 +28,6 @@ cv = re.sub(r'<p class="cv-download">.*?</p>\s*', '', cv, flags=re.DOTALL)
 # cv.md: remove legacy section dividers
 cv = cv.replace('\n---\n', '\n\n')
 
-# Normalize heading levels for PDF output
-cv = re.sub(r'^### ', '# ', cv, flags=re.MULTILINE)
-cv = re.sub(r'^#### ', '## ', cv, flags=re.MULTILINE)
-
 # Strip bold markers from headings (already bold in LaTeX)
 cv = re.sub(r'^(#{1,6}) \*\*(.*?)\*\*$', r'\1 \2', cv, flags=re.MULTILINE)
 
