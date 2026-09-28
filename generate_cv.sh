@@ -22,6 +22,9 @@ pub = strip_front_matter((root / 'publications.md').read_text(encoding='utf-8'))
 # publications.md: <u>text</u> -> [text]{.underline}
 pub = re.sub(r'<u>(.*?)</u>', r'[\1]{.underline}', pub)
 
+# publications.md: <sup>text</sup> -> ^text^ (pandoc drops raw HTML in LaTeX)
+pub = re.sub(r'<sup>(.*?)</sup>', r'^\1^', pub)
+
 # cv.md: remove web-only PDF download block
 cv = re.sub(r'<p class="cv-download">.*?</p>\s*', '', cv, flags=re.DOTALL)
 
