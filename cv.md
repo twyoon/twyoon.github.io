@@ -43,15 +43,15 @@ Advisor: [Prof. Hyunyong Choi](https://choigroup.snu.ac.kr/)
 
 # **Presentations**
 
-1. **APS Global Physics Summit**. Denver, USA, Mar 2026. *(oral)*  
+1. **APS Global Physics Summit**, Denver, USA, Mar 2026. *(oral)*  
 "Polarization of P1 electron spin bath via repetitive Hartmann-Hahn transfer"
-1. **KPS Spring Meeting**. Daejeon, Korea, Apr 2024. *(oral)*  
+1. **KPS Spring Meeting**, Daejeon, Korea, Apr 2024. *(oral)*  
 "Probing and controlling many-body dipolar interactions between electron spins in diamond"
-1. **Optics and Photonics Congress (OPC)**. Jeju, Korea, Aug 2023. *(oral)*  
+1. **Optics and Photonics Congress (OPC)**, Jeju, Korea, Aug 2023. *(oral)*  
 "Precise calibration of magnetic field vector in a diamond nitrogen-vacancy center ensemble"
-1. **Conference on Lasers and Electro-Optics (CLEO)**. San Jose, USA, May 2022. *(poster)*  
+1. **Conference on Lasers and Electro-Optics (CLEO)**, San Jose, USA, May 2022. *(poster)*  
 "Deterministic creation of single nitrogen-vacancy center in diamond using femtosecond laser writing"
-1. **Optics and Photonics Congress (OPC)**. Jeju, Korea, Jul 2021. *(oral)*  
+1. **Optics and Photonics Congress (OPC)**, Jeju, Korea, Jul 2021. *(oral)*  
 "Aberration correction of femtosecond lasers for deterministic quantum emitters in nitrogen-vacancy diamonds"
 
 ---
