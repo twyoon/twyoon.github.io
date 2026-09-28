@@ -26,7 +26,7 @@ pub = re.sub(r'<u>(.*?)</u>', r'[\1]{.underline}', pub)
 cv = re.sub(r'<p class="cv-download">.*?</p>\s*', '', cv, flags=re.DOTALL)
 
 # cv.md: remove legacy section dividers
-cv = cv.replace('\n---\n', '\n\n')
+cv = re.sub(r'^---\s*$', '', cv, flags=re.MULTILINE)
 
 # Strip bold markers from headings (already bold in LaTeX)
 cv = re.sub(r'^(#{1,6}) \*\*(.*?)\*\*$', r'\1 \2', cv, flags=re.MULTILINE)
@@ -34,7 +34,7 @@ cv = re.sub(r'^(#{1,6}) \*\*(.*?)\*\*$', r'\1 \2', cv, flags=re.MULTILINE)
 # Build Publications section from publications.md
 pub_section = '# Publications\n\n' + pub.strip() + '\n\n'
 
-# Insert Publications between Honors and Presentations
+# Insert Publications between Research Experience and Presentations
 m = re.search(r'^# Presentations', cv, re.MULTILINE)
 if m:
     cv = cv[:m.start()] + pub_section + cv[m.start():]
@@ -44,11 +44,11 @@ else:
 # 최종 문서 조합
 doc = (
     '---\n'
-    'geometry: "top=1in, bottom=1in, left=1.1in, right=1.1in"\n'
-    'fontsize: 11pt\n'
-    'mainfont: "Times New Roman"\n'
+    'papersize: a4\n'
+    'geometry: "top=1.9cm, bottom=1.9cm, left=2cm, right=2cm"\n'
+    'fontsize: 10pt\n'
     'colorlinks: true\n'
-    'urlcolor: blue\n'
+    'urlcolor: black\n'
     '---\n\n'
 ) + cv.strip() + '\n'
 
@@ -61,7 +61,8 @@ name = root / '_cv_name.tex'
 r = subprocess.run(
     ['pandoc', str(temp_md),
      '-o', str(root / 'assets/CV_Taewoong_Yoon.pdf'),
-     '--pdf-engine=xelatex',
+     '--pdf-engine=pdflatex',
+     f'--lua-filter={root / "script/cv-layout.lua"}',
      f'--include-in-header={header}',
      f'--include-before-body={name}'],
     capture_output=True, text=True

@@ -13,14 +13,11 @@ permalink: /cv/
 # **Education**
 
 **Seoul National University (SNU), Seoul, Korea**  
-Ph.D. Candidate in Physics, Mar 2019 - Present  
+Ph.D. in Physics, Mar 2019 - Feb 2027 (expected)  
 Advisor: Prof. Hyunyong Choi
 
 **Pohang University of Science and Technology (POSTECH), Pohang, Korea**  
 B.S. in Physics, Mar 2014 - Feb 2019
-
-**Seoul Science High School (SSHS), Seoul, Korea**  
-Mar 2011 - Feb 2014
 
 ---
 
@@ -30,57 +27,65 @@ Mar 2011 - Feb 2014
 Research Assistant, Feb 2026 - Present  
 Advisor: [Dr. Junghyun Lee](https://sites.google.com/view/pauleegroup)
 
+- Estimated defect densities from DEER data as part of a collaborative project with the Awschalom group (University of Chicago).
+- Developing Python-based control software for a spin measurement setup, covering FPGA-based timing and AWG pulse generation.
+
 **Seoul National University (SNU), Seoul, Korea**  
 Graduate Research Assistant, Aug 2019 - Present  
 Advisor: [Prof. Hyunyong Choi](https://choigroup.snu.ac.kr/)
 
----
-
-# **Honors and Awards**
-
-1. BK Excellent TA Award, Jul 2020
-1. BK Frontier Fellowship, Mar 2019 - Aug 2019
-1. National Scholarship for Science and Engineering, Mar 2014 - Feb 2018
+- Built the group's first NV center measurement system, including the confocal microscope, microwave delivery, pulse sequencing, and Python-based instrument control and data acquisition.
+- Polarized the dark P1 electron spin bath by repetitive Hartmann-Hahn transfer from NV centers, and characterized the coherence and disorder of the resulting collective spin state.
+- Developed a method to identify NV crystallographic axes from spatially varying microwave fields, enabling vector magnetometry without a calibrated bias field.
+- Built a femtosecond laser-writing system with SLM-based aberration correction and real-time photoluminescence monitoring for site-controlled creation of color centers in diamond, SiC, and hBN.
 
 ---
 
 # **Presentations**
 
-## **Oral Presentations**
-
-1. **APS Global Physics Summit**. Denver, USA, Mar 2026.  
+1. **APS Global Physics Summit**. Denver, USA, Mar 2026. *(oral)*  
 "Polarization of P1 electron spin bath via repetitive Hartmann-Hahn transfer"
-1. **KPS Spring Meeting**. Daejeon, Korea, Apr 2024.  
+1. **KPS Spring Meeting**. Daejeon, Korea, Apr 2024. *(oral)*  
 "Probing and controlling many-body dipolar interactions between electron spins in diamond"
-1. **Optics and Photonics Congress (OPC)**. Jeju, Korea, Aug 2023.  
+1. **Optics and Photonics Congress (OPC)**. Jeju, Korea, Aug 2023. *(oral)*  
 "Precise calibration of magnetic field vector in a diamond nitrogen-vacancy center ensemble"
-1. **Optics and Photonics Congress (OPC)**. Jeju, Korea, Jul 2021.  
-"Aberration correction of femtosecond lasers for deterministic quantum emitters in nitrogen-vacancy diamonds"
-
-## **Poster Presentations**
-
-1. **Conference on Lasers and Electro-Optics (CLEO)**. San Jose, USA, May 2022.  
+1. **Conference on Lasers and Electro-Optics (CLEO)**. San Jose, USA, May 2022. *(poster)*  
 "Deterministic creation of single nitrogen-vacancy center in diamond using femtosecond laser writing"
-
----
-
-# **Teaching Experience**
-
-**Teaching Assistant at SNU**  
-- Electrodynamics I (Spring 2021)  
-- Computational Physics (Fall 2020)  
-- Electromagnetic Waves and Optics (Spring 2020)  
-- Physics Lab. 2 (Summer 2019, Fall 2019)  
-- Physics Lab. 1 (Spring 2019)  
+1. **Optics and Photonics Congress (OPC)**. Jeju, Korea, Jul 2021. *(oral)*  
+"Aberration correction of femtosecond lasers for deterministic quantum emitters in nitrogen-vacancy diamonds"
 
 ---
 
 # **Technical Skills**
 
-**Optical and spin measurement:** Confocal scanning microscopy, AOM double-pass configuration, ODMR and spin manipulation, HBT measurement, femtosecond laser writing
+**Coherent spin control:** Pulse-sequence design on AWG, TTL pulse generator, and FPGA, including IQ-modulated microwave pulse shaping and synchronization of laser and photon-counting gates.
 
-**Instrument control and data acquisition:** Experiment automation and instrument control (Python, LabVIEW)
+**Optical measurement and control:** Confocal scanning microscopy, gated and time-correlated photon counting, photoluminescence spectroscopy, AOM double-pass laser pulse control, femtosecond laser writing with SLM-based aberration correction.
 
-**Microfabrication:** Photolithography (mask aligner, RIE, thermal evaporator)
+**Instrument control and data acquisition:** Measurement automation in Python and LabVIEW.
 
-**Design and simulation:** PCB design (Altium), CAD modeling (AutoCAD, Fusion), numerical simulation and data analysis (Python), electromagnetic field modeling (COMSOL)
+**Simulation and modeling:** Spin dynamics and Monte Carlo simulation in Python (QuTiP), electromagnetic field modeling (COMSOL).
+
+**Fabrication:** Photolithography, RIE, thermal evaporation, 2D material exfoliation and transfer.
+
+**Design:** PCBs, photomasks, and machined mechanical parts (Altium, KLayout, AutoCAD, Fusion).
+
+---
+
+# **Teaching Experience**
+
+**Teaching Assistant, Seoul National University**  
+
+- Electrodynamics I (Spring 2021)  
+- Computational Physics (Fall 2020)  
+- Electromagnetic Waves and Optics (Spring 2020)  
+- Physics Lab. 2 (Summer 2019, Fall 2019)  
+- Physics Lab. 1 (Spring 2019)
+
+---
+
+# **Honors and Awards**
+
+1. BK Excellent Teaching Assistant Award, Jul 2020
+1. BK Frontier Fellowship, Mar 2019 - Aug 2019
+1. National Scholarship for Science and Engineering, Mar 2014 - Feb 2018

@@ -15,13 +15,21 @@ title: About
     </div>
     <div class="profile-text">
         <p>
-            Hello! I’m Taewoong Yoon, a Ph.D. candidate in Physics at <strong>Seoul National University (SNU)</strong>, 
-            working under the guidance of <strong><a href="http://choigroup.snu.ac.kr" target="_blank">Prof. Hyunyong Choi</a></strong>.
+            I'm Taewoong Yoon, a Ph.D. candidate in Physics at <strong>Seoul National University</strong>,
+            working with <strong><a href="http://choigroup.snu.ac.kr" target="_blank">Prof. Hyunyong Choi</a></strong>.
+            I also work with <strong><a href="https://sites.google.com/view/pauleegroup" target="_blank">Dr. Junghyun Lee</a></strong>
+            at <strong>KIST</strong>. I will complete my Ph.D. in February 2027 and am looking for a
+            postdoctoral position.
         </p>
         <p>
-            I’m fascinated by how we can harness quantum systems for <strong>quantum sensing and quantum simulation</strong>. 
-            My research focuses on experimental studies of the quantum dynamics mediated by dipolar interactions between 
-            electron spins in diamond, including <strong>nitrogen-vacancy (NV) centers and P1 centers</strong>.
+            My Ph.D. work has focused mainly on electron spin ensembles in diamond, specifically
+            nitrogen-vacancy (NV) and substitutional nitrogen (P1) centers. I coherently control these
+            interacting spins and study the interactions and polarization dynamics between the ensembles.
+        </p>
+        <p>
+            Along the way I established two experimental platforms in my group: an NV center measurement
+            system, covering the optics and microwave hardware, pulsed spin control, and the measurement
+            software, and a single-pulse femtosecond laser writing setup for creating color centers.
         </p>
     </div>
 </div>
