@@ -16,8 +16,8 @@ title: About
     <div class="profile-text">
         <p>
             I'm Taewoong Yoon, a Ph.D. candidate in Physics at <strong>Seoul National University</strong>,
-            working with <strong><a href="http://choigroup.snu.ac.kr" target="_blank">Prof. Hyunyong Choi</a></strong>.
-            I also work with <strong><a href="https://sites.google.com/view/pauleegroup" target="_blank">Dr. Junghyun Lee</a></strong>
+            working with <strong><a href="http://choigroup.snu.ac.kr" target="_blank">Prof.&nbsp;Hyunyong&nbsp;Choi</a></strong>.
+            I also work with <strong><a href="https://sites.google.com/view/pauleegroup" target="_blank">Dr.&nbsp;Junghyun&nbsp;Lee</a></strong>
             at the <strong>Korea Institute of Science and Technology (KIST)</strong>. I will complete my Ph.D. in February 2027 and am looking for a postdoctoral position.
         </p>
         <p>
