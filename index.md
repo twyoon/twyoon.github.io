@@ -15,20 +15,83 @@ title: About
     </div>
     <div class="profile-text">
         <p>
-            I'm Taewoong Yoon, a Ph.D. candidate in Physics at <strong>Seoul National University</strong>,
-            working with <strong><a href="http://choigroup.snu.ac.kr" target="_blank">Prof.&nbsp;Hyunyong&nbsp;Choi</a></strong>.
-            I also work with <strong><a href="https://sites.google.com/view/pauleegroup" target="_blank">Dr.&nbsp;Junghyun&nbsp;Lee</a></strong>
-            at the <strong>Korea Institute of Science and Technology (KIST)</strong>. I will complete my Ph.D. in February 2027 and am looking for a postdoctoral position.
+            I am Taewoong Yoon, a Ph.D. candidate advised by <strong><a href="https://choigroup.snu.ac.kr" target="_blank">Prof. Hyunyong Choi</a></strong>
+            in the Department of Physics and Astronomy at <strong>Seoul National University</strong>.
+            I also work with <strong><a href="https://sites.google.com/view/pauleegroup" target="_blank">Dr. Junghyun Lee</a></strong>
+            at the <strong>Korea Institute of Science and Technology (KIST)</strong>. I expect to complete my Ph.D. in February 2027 and am seeking a postdoctoral position.
         </p>
         <p>
-            My Ph.D. work has focused mainly on electron spin ensembles in diamond, specifically
-            nitrogen-vacancy (NV) and substitutional nitrogen (P1) centers. I coherently control these
-            interacting spins and study the interactions and polarization dynamics between the ensembles.
-        </p>
-        <p>
-            Along the way I established two experimental platforms in my group: an NV center measurement
-            system, covering the optics and microwave hardware, pulsed spin control, and the measurement
-            software, and a single-pulse femtosecond laser writing setup for creating color centers.
+            My research focuses on coherent control of <strong>electron spin defects in diamond</strong>, in particular
+            nitrogen-vacancy (NV) and substitutional nitrogen (P1) centers, and on the interactions and
+            polarization dynamics among these spin ensembles.
+            I also <strong>built the group's first NV measurement setup</strong>, from the confocal optics and
+            microwave hardware to pulse control and data acquisition software.
         </p>
     </div>
 </div>
+
+<section class="research-section">
+    <h2>Research</h2>
+
+    <div class="research-item">
+        <div class="research-figure">
+            <a href="./assets/research_figs/Slide1.png" target="_blank"><img src="./assets/research_figs/Slide1.png" alt="Repeated NV-to-P1 polarization transfer, P1 polarization buildup, and collective Rabi oscillation"></a>
+        </div>
+        <div class="research-text">
+            <h3>Mesoscopic spin coherence in a disordered dark electron spin ensemble</h3>
+            <p>
+                P1 centers are optically dark and cannot be initialized with light. By repeatedly
+                transferring polarization from optically initialized NV centers, I polarized the P1
+                ensemble and characterized its collective coherent dynamics.
+            </p>
+            <p class="research-links">
+                <a href="https://doi.org/10.48550/arXiv.2602.17074" target="_blank">arXiv:2602.17074</a> (2026)
+            </p>
+        </div>
+    </div>
+
+    <div class="research-item">
+        <div class="research-figure">
+            <a href="./assets/research_figs/Slide2.png" target="_blank"><img src="./assets/research_figs/Slide2.png" alt="P1-P1 DEER sequence and measured spectra between hyperfine-resolved P1 subgroups"></a>
+        </div>
+        <div class="research-text">
+            <h3>Polarization transfer between P1 subgroups</h3>
+            <p>
+                I extended the protocols established between NV and P1 centers to P1&ndash;P1, probing the interactions between hyperfine-resolved P1 subgroups and
+                demonstrating polarization transfer between them.
+            </p>
+        </div>
+    </div>
+
+    <div class="research-item">
+        <div class="research-figure">
+            <a href="./assets/research_figs/Slide3.png" target="_blank"><img src="./assets/research_figs/Slide3.png" alt="Identification of NV axes from spatially varying microwave fields"></a>
+        </div>
+        <div class="research-text">
+            <h3>Vector magnetometry with NV ensembles</h3>
+            <p>
+                NV centers in an ensemble are oriented along four crystallographic axes, and
+                reconstructing a vector magnetic field requires assigning each resonance to its axis.
+                I developed a method that identifies the axes from a spatially varying microwave field,
+                enabling vector magnetometry without a calibrated bias field.
+            </p>
+            <p class="research-links">
+                <a href="https://doi.org/10.1063/5.0243162" target="_blank"><em>Applied Physics Letters</em> <strong>126</strong>, 144002 (2025)</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="research-item">
+        <div class="research-figure">
+            <a href="./assets/research_figs/Slide4.png" target="_blank"><img src="./assets/research_figs/Slide4.png" alt="Single-pulse femtosecond laser writing setup and written single color centers"></a>
+        </div>
+        <div class="research-text">
+            <h3>Femtosecond laser writing of color centers</h3>
+            <p>
+                I built a single-pulse femtosecond laser-writing system with aberration correction
+                for site-controlled creation of color centers in diamond and hexagonal boron nitride,
+                and confirmed single emitters by photon antibunching.
+            </p>
+        </div>
+    </div>
+</section>

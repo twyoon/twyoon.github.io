@@ -13,31 +13,32 @@ permalink: /cv/
 # **Education**
 
 **Seoul National University (SNU), Seoul, Korea**  
-Ph.D. in Physics, Mar 2019 - Feb 2027 (expected)  
+Ph.D. in Physics, Mar 2019 – Feb 2027 (expected)  
 Advisor: Prof. Hyunyong Choi
 
 **Pohang University of Science and Technology (POSTECH), Pohang, Korea**  
-B.S. in Physics, Mar 2014 - Feb 2019
+B.S. in Physics, Mar 2014 – Feb 2019
 
 ---
 
 # **Research Experience**
 
 **Korea Institute of Science and Technology (KIST), Seoul, Korea**  
-Research Assistant, Feb 2026 - Present  
+Research Assistant, Feb 2026 – Present  
 Advisor: [Dr. Junghyun Lee](https://sites.google.com/view/pauleegroup)
 
 - Estimated defect densities from DEER data as part of a collaborative project with the Awschalom group (University of Chicago).
-- Developing Python-based control software for a spin measurement setup, covering FPGA-based timing and AWG pulse generation.
+- Developing Python-based control software for a spin measurement setup, including FPGA-based timing and AWG pulse generation.
 
 **Seoul National University (SNU), Seoul, Korea**  
-Graduate Research Assistant, Aug 2019 - Present  
+Graduate Research Assistant, Aug 2019 – Present  
 Advisor: [Prof. Hyunyong Choi](https://choigroup.snu.ac.kr/)
 
 - Built the group's first NV center measurement system, including the confocal microscope, microwave delivery, pulse sequencing, and Python-based instrument control and data acquisition.
-- Polarized the dark P1 electron spin bath by repetitive Hartmann-Hahn transfer from NV centers, and characterized the coherence and disorder of the resulting collective spin state.
+- Polarized the dark P1 electron spin bath by repeated Hartmann–Hahn transfer from NV centers and characterized the coherence and disorder of the resulting collective spin state.
+- Extended the NV–P1 protocols to P1–P1, probing interactions between hyperfine-resolved P1 subgroups and demonstrating polarization transfer between them.
 - Developed a method to identify NV crystallographic axes from spatially varying microwave fields, enabling vector magnetometry without a calibrated bias field.
-- Built a femtosecond laser-writing system with SLM-based aberration correction and real-time photoluminescence monitoring for site-controlled creation of color centers in diamond, SiC, and hBN.
+- Built a femtosecond laser-writing system with SLM-based aberration correction for site-controlled creation of color centers in diamond and hBN.
 
 ---
 
@@ -58,17 +59,17 @@ Advisor: [Prof. Hyunyong Choi](https://choigroup.snu.ac.kr/)
 
 # **Technical Skills**
 
-**Coherent spin control:** Pulse-sequence design on AWG, TTL pulse generator, and FPGA, including IQ-modulated microwave pulse shaping and synchronization of laser and photon-counting gates.
+**Coherent spin control:** Pulse-sequence design on AWGs, TTL pulse generators, and FPGAs, including IQ-modulated microwave pulse shaping and synchronization of laser and photon-counting gates.
 
 **Optical measurement and control:** Confocal scanning microscopy, gated and time-correlated photon counting, photoluminescence spectroscopy, AOM double-pass laser pulse control, femtosecond laser writing with SLM-based aberration correction.
 
 **Instrument control and data acquisition:** Measurement automation in Python and LabVIEW.
 
-**Simulation and modeling:** Spin dynamics and Monte Carlo simulation in Python (QuTiP), electromagnetic field modeling (COMSOL).
+**Simulation and modeling:** Spin dynamics and Monte Carlo simulations in Python (QuTiP), electromagnetic field modeling (COMSOL).
 
 **Fabrication:** Photolithography, RIE, thermal evaporation, 2D material exfoliation and transfer.
 
-**Design:** PCBs, photomasks, and machined mechanical parts (Altium, KLayout, AutoCAD, Fusion).
+**Design:** PCBs, photomasks, and machined mechanical parts (Altium, KLayout, AutoCAD, Fusion 360).
 
 ---
 
@@ -87,5 +88,5 @@ Advisor: [Prof. Hyunyong Choi](https://choigroup.snu.ac.kr/)
 # **Honors and Awards**
 
 1. BK Excellent Teaching Assistant Award, Jul 2020
-1. BK Frontier Fellowship, Mar 2019 - Aug 2019
-1. National Scholarship for Science and Engineering, Mar 2014 - Feb 2018
+1. BK Frontier Fellowship, Mar 2019 – Aug 2019
+1. National Scholarship for Science and Engineering, Mar 2014 – Feb 2018

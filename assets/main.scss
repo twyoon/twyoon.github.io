@@ -76,6 +76,62 @@
   flex: 1 1 18rem;
 }
 
+.research-section {
+  margin-top: 3rem;
+}
+
+.research-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.research-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.research-figure {
+  flex: 0 0 45%;
+}
+
+.research-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+.figure-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  border: 2px dashed #bbb;
+  border-radius: 0.25rem;
+  color: #999;
+  background: #f7f7f7;
+}
+
+.research-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.research-text h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.research-text p {
+  margin-bottom: 0.5rem;
+}
+
+.research-links {
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
@@ -90,5 +146,13 @@
   .profile-image {
     max-width: 25rem;
     margin: 0 auto;
+  }
+
+  .research-item {
+    flex-direction: column;
+  }
+
+  .research-figure {
+    width: 100%;
   }
 }
