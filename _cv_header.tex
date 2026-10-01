@@ -18,10 +18,13 @@
   {}{0em}{\MakeUppercase}[\vspace{-0.55em}{\color{rulegray}\rule{\textwidth}{0.4pt}}]
 \titlespacing*{\section}{0pt}{0.75em}{0.55em}
 \titleformat{\subsection}{\normalfont\sffamily\bfseries\small}{}{0em}{}
-\setlist[itemize]{leftmargin=1.1em, topsep=0.1em, itemsep=0.16em, parsep=0pt, label=\textendash}
-\setlist[enumerate]{leftmargin=1.5em, topsep=0.1em, itemsep=0.16em, parsep=0pt}
+\setlist[itemize]{leftmargin=1.1em, topsep=0.1em, itemsep=0.16em, parsep=0pt, label=\textendash, before={\interlinepenalty=10000}}
+\setlist[enumerate]{leftmargin=1.5em, topsep=0.1em, itemsep=0.16em, parsep=0pt, before={\interlinepenalty=10000}}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
+% A list item never splits across pages: it moves whole to the next page.
+\widowpenalty=10000
+\clubpenalty=10000
 \raggedbottom
 \pagestyle{fancy}
 \fancyhf{}

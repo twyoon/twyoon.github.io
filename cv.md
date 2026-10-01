@@ -35,7 +35,7 @@ Graduate Research Assistant, Aug 2019 – Present
 Advisor: [Prof. Hyunyong Choi](https://choigroup.snu.ac.kr/)
 
 - Built the group's first NV center measurement system, including the confocal microscope, microwave delivery, pulse sequencing, and Python-based instrument control and data acquisition.
-- Polarized the dark P1 electron spin bath by repeated Hartmann–Hahn transfer from NV centers and characterized the coherence and disorder of the resulting collective spin state.
+- Enhanced the polarization of the dark P1 electron spin bath 740-fold over thermal equilibrium by iterative Hartmann–Hahn transfer from NV centers, and characterized its collective coherence and disorder.
 - Extended the NV–P1 protocols to P1–P1, probing interactions between hyperfine-resolved P1 subgroups and demonstrating polarization transfer between them.
 - Developed a method to identify NV crystallographic axes from spatially varying microwave fields, enabling vector magnetometry without a calibrated bias field.
 - Built a femtosecond laser-writing system with SLM-based aberration correction for site-controlled creation of color centers in diamond and hBN.
@@ -61,7 +61,7 @@ Advisor: [Prof. Hyunyong Choi](https://choigroup.snu.ac.kr/)
 
 **Coherent spin control:** Pulse-sequence design on AWGs, TTL pulse generators, and FPGAs, including IQ-modulated microwave pulse shaping and synchronization of laser and photon-counting gates.
 
-**Optical measurement and control:** Confocal scanning microscopy, gated and time-correlated photon counting, photoluminescence spectroscopy, AOM double-pass laser pulse control, femtosecond laser writing with SLM-based aberration correction.
+**Optical measurement and control:** Scanning confocal microscopy, gated and time-correlated photon counting, photoluminescence spectroscopy, AOM double-pass laser pulse control, femtosecond laser writing with SLM-based aberration correction.
 
 **Instrument control and data acquisition:** Measurement automation in Python and LabVIEW.
 

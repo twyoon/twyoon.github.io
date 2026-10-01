@@ -40,7 +40,7 @@ title: About
         <div class="research-text">
             <h3>Mesoscopic spin coherence in a disordered dark electron spin ensemble</h3>
             <p>
-                P1 centers are optically dark and cannot be initialized with light. By repeatedly
+                P1 centers are optically dark and cannot be initialized with light. By iteratively
                 transferring polarization from optically initialized NV centers, I polarized the P1
                 ensemble and characterized its collective coherent dynamics.
             </p>
