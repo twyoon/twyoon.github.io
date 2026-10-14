@@ -13,7 +13,7 @@ $heading-serif: "Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 2rem;
   max-width: 72rem;
@@ -22,7 +22,7 @@ $heading-serif: "Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
 }
 
 .profile-image {
-  flex: 0 1 32%;
+  flex: 0 0 15rem;  // fixed size: wraps above the text instead of shrinking
   max-width: 15rem;
   width: 100%;
 }
@@ -152,6 +152,7 @@ $heading-serif: "Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
   }
 
   .profile-image {
+    flex: none;
     max-width: 13rem;
     margin: 0 auto;
   }
