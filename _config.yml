@@ -1,8 +1,9 @@
 title: Taewoong Yoon
 author: Taewoong Yoon
 email: twyoon@snu.ac.kr
-description: > # this means to ignore newlines until "twitter_username:"
-  Personal website of Taewoong Yoon
+description: >-
+  Ph.D. candidate in physics at Seoul National University, working on coherent control
+  of solid-state spin defects in diamond.
 show_home_posts: false
 show_footer_description: false
 
@@ -48,9 +49,6 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-header_pages:
- - cv.md
- - publications.md
 
 # Build settings
 theme: minima

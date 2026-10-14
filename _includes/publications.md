@@ -1,12 +1,6 @@
----
-layout: page
-title: Publications
-permalink: /publications/
----
-
 <sup>\*</sup> *Equal contribution.* <sup>†</sup> *Corresponding author.*
 
-1. **T. Yoon**, D. Kim, J. Lee<sup>†</sup>, and H. Choi<sup>†</sup>, "Polarization transfer between hyperfine-resolved P1 subgroups in diamond." *In preparation.*
+1. **T. Yoon**, D. Kim, J. Lee<sup>†</sup>, and H. Choi<sup>†</sup>, "Controlled polarization exchange between dark electron spin subensembles in diamond." *In preparation.*
 
 1. M. M. McMillan<sup>\*</sup>, H. Kim<sup>\*</sup>, J. C. Marcks, **T. Yoon**, B. Pingault, N. Delegan, F. J. Heremans, H. Seo<sup>†</sup>, J. Lee<sup>†</sup>, and D. D. Awschalom<sup>†</sup>, "Quantum decoherence in a mixed-dimensional spin bath." *In preparation.*
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-# cv.md + publications.md -> assets/CV_Taewoong_Yoon.pdf
+# _includes/cv.md + _includes/publications.md -> assets/CV_Taewoong_Yoon.pdf
 set -e
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
@@ -16,8 +16,8 @@ def strip_front_matter(text):
     return text
 
 root = Path.cwd()
-cv = strip_front_matter((root / 'cv.md').read_text(encoding='utf-8'))
-pub = strip_front_matter((root / 'publications.md').read_text(encoding='utf-8'))
+cv = strip_front_matter((root / '_includes' / 'cv.md').read_text(encoding='utf-8'))
+pub = strip_front_matter((root / '_includes' / 'publications.md').read_text(encoding='utf-8'))
 
 # publications.md: <u>text</u> -> [text]{.underline}
 pub = re.sub(r'<u>(.*?)</u>', r'[\1]{.underline}', pub)

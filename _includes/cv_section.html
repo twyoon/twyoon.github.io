@@ -1,0 +1,16 @@
+{%- comment -%}
+  Renders one section of _includes/cv.md, matched by its heading text.
+  Usage: {% include cv_section.html id="education" heading="Education" %}
+{%- endcomment -%}
+{%- capture cv_source -%}{% include cv.md %}{%- endcapture -%}
+{%- assign cv_parts = cv_source | split: "# **" -%}
+{%- assign heading_key = include.heading | append: "**" -%}
+{%- for part in cv_parts -%}
+  {%- assign part_start = part | slice: 0, heading_key.size -%}
+  {%- if part_start == heading_key -%}
+<section id="{{ include.id }}" class="cv-section">
+  <h2>{{ include.label | default: include.heading }}</h2>
+  {{ part | remove_first: heading_key | markdownify }}
+</section>
+  {%- endif -%}
+{%- endfor -%}

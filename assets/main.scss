@@ -2,6 +2,10 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+// Calmer link color than minima's default bright blue.
+$brand-color: #1a5fb4;
+$heading-serif: "Source Serif 4", Charter, "Bitstream Charter", Georgia, serif;
+
 @import "minima/base";
 @import "minima/layout";
 @import "minima/syntax-highlighting";
@@ -18,8 +22,8 @@
 }
 
 .profile-image {
-  flex: 1 1 40%;
-  max-width: 25rem;
+  flex: 0 1 32%;
+  max-width: 15rem;
   width: 100%;
 }
 
@@ -33,6 +37,10 @@
 .profile-text {
   flex: 1 1 55%;
   max-width: 38rem;
+
+  p {
+    text-wrap: pretty;
+  }
 }
 
 .cv-download {
@@ -93,7 +101,7 @@
 }
 
 .research-figure {
-  flex: 0 0 45%;
+  flex: 0 0 38%;
 }
 
 .research-figure img {
@@ -135,7 +143,7 @@
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    text-align: justify;
+    text-align: left;
   }
 
   .profile-image,
@@ -144,7 +152,7 @@
   }
 
   .profile-image {
-    max-width: 25rem;
+    max-width: 13rem;
     margin: 0 auto;
   }
 
@@ -153,6 +161,232 @@
   }
 
   .research-figure {
-    width: 100%;
+    flex: none;
+    width: 85%;
+    max-width: 22rem;
+    margin: 0 auto;
+  }
+}
+
+/* One-page layout with a sticky section nav */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.onepage {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 3rem;
+  box-sizing: border-box;
+  width: 100%;  // body is a flex column in minima; auto margins would shrink-wrap
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 3rem $spacing-unit;
+}
+
+.side-nav {
+  position: sticky;
+  top: 3rem;
+  align-self: start;
+  font-size: 0.95rem;
+
+  ul {
+    list-style: none;
+    margin: 0 0 1.25rem;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  ul a {
+    display: block;
+    padding: 0.3rem 0 0.3rem 0.75rem;
+    border-left: 2px solid $grey-color-light;
+    color: $grey-color;
+    text-decoration: none;
+    transition: color 0.15s, border-color 0.15s;
+
+    &:hover {
+      color: $text-color;
+    }
+
+    &.active {
+      color: $text-color;
+      font-weight: 600;
+      border-left-color: $text-color;
+    }
+  }
+}
+
+.side-nav-name {
+  display: block;
+  font-family: $heading-serif;
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $text-color;
+  text-decoration: none;
+
+  &:visited,
+  &:hover {
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+
+.side-nav-pdf {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid $grey-color-light;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.onepage-content > section {
+  scroll-margin-top: 2rem;
+}
+
+.onepage-content .about-container {
+  padding: 0;
+  margin: 0;
+  max-width: none;
+}
+
+.onepage-content .cv-section,
+.onepage-content .research-section {
+  margin-top: 3.5rem;
+}
+
+.onepage-content .cv-section h2,
+.onepage-content .research-section h2 {
+  font-family: $heading-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+// Separate an entry (e.g. SNU) from the bullet list of the entry above it.
+.cv-section ul + p {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .onepage {
+    display: block;
+    padding: 0 $spacing-unit * 0.5 2rem;
+  }
+
+  .side-nav {
+    top: 0;
+    z-index: 10;
+    margin: 0 (-$spacing-unit * 0.5) 1.5rem;
+    padding: 0.6rem $spacing-unit * 0.5;
+    background: $background-color;
+    border-bottom: 1px solid $grey-color-light;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    ul {
+      display: flex;
+      flex: 1 1 auto;
+      min-width: 0;
+      margin: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      $fade: 2rem;
+
+      &.fade-right {
+        -webkit-mask-image: linear-gradient(to right, #000 calc(100% - #{$fade}), transparent);
+        mask-image: linear-gradient(to right, #000 calc(100% - #{$fade}), transparent);
+      }
+
+      &.fade-left {
+        -webkit-mask-image: linear-gradient(to left, #000 calc(100% - #{$fade}), transparent);
+        mask-image: linear-gradient(to left, #000 calc(100% - #{$fade}), transparent);
+      }
+
+      &.fade-left.fade-right {
+        -webkit-mask-image: linear-gradient(to right, transparent, #000 #{$fade}, #000 calc(100% - #{$fade}), transparent);
+        mask-image: linear-gradient(to right, transparent, #000 #{$fade}, #000 calc(100% - #{$fade}), transparent);
+      }
+    }
+
+    ul a {
+      white-space: nowrap;
+      padding: 0.25rem 0.6rem;
+      border-left: none;
+      border-bottom: 2px solid transparent;
+
+      &.active {
+        border-bottom-color: $text-color;
+      }
+    }
+  }
+
+  .side-nav-name {
+    display: none;
+  }
+
+  .side-nav-pdf {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .onepage-content > section {
+    scroll-margin-top: 4rem;
+  }
+}
+
+/* Footer aligned with the one-page grid (content column, not minima's 800px wrapper) */
+
+.onepage-body .site-footer .wrapper {
+  box-sizing: border-box;
+  max-width: 68rem;
+  padding: 0 $spacing-unit;
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 3rem;
+}
+
+.onepage-body .site-footer .footer-col-wrapper {
+  grid-column: 2;
+}
+
+@media (max-width: 800px) {
+  .onepage-body .site-footer .wrapper {
+    display: block;
+    padding: 0 $spacing-unit * 0.5;
+  }
+}
+
+/* 404 */
+
+.plain-content {
+  flex: 1;
+}
+
+.not-found {
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 6rem $spacing-unit 4rem;
+  text-align: center;
+
+  h1 {
+    font-family: $heading-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
   }
 }

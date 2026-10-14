@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="onepage-body">
+
+    <div class="onepage">
+      <nav class="side-nav" aria-label="Sections">
+        <a class="side-nav-name" href="#about">{{ site.title | escape }}</a>
+        <ul>
+          {%- for item in page.sections -%}
+          <li><a href="#{{ item.id }}">{{ item.label }}</a></li>
+          {%- endfor -%}
+        </ul>
+        <a class="side-nav-pdf" href="{{ '/assets/CV_Taewoong_Yoon.pdf' | relative_url }}">CV (PDF)</a>
+      </nav>
+
+      <main class="onepage-content" aria-label="Content">
+        {{ content }}
+      </main>
+    </div>
+
+    {%- include footer.html -%}
+
+    <script>
+      (function () {
+        var nav = document.querySelector('.side-nav ul');
+        var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
+        var sections = links.map(function (a) {
+          return document.getElementById(a.getAttribute('href').slice(1));
+        });
+        var ticking = false;
+
+        function update() {
+          ticking = false;
+          var idx = 0;
+          sections.forEach(function (s, i) {
+            if (s && s.getBoundingClientRect().top <= Math.min(window.innerHeight * 0.3, 160)) idx = i;
+          });
+          if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+            idx = sections.length - 1;
+          }
+          links.forEach(function (a, i) { a.classList.toggle('active', i === idx); });
+          // Keep the active item visible in the horizontal mobile bar.
+          var a = links[idx];
+          if (nav.scrollWidth > nav.clientWidth) {
+            nav.scrollLeft = a.offsetLeft - (nav.clientWidth - a.offsetWidth) / 2;
+          }
+        }
+
+        // Fade the edges of the horizontal mobile bar when more items are off-screen.
+        function updateFade() {
+          var max = nav.scrollWidth - nav.clientWidth;
+          nav.classList.toggle('fade-left', max > 1 && nav.scrollLeft > 1);
+          nav.classList.toggle('fade-right', max > 1 && nav.scrollLeft < max - 1);
+        }
+        nav.addEventListener('scroll', updateFade, { passive: true });
+        window.addEventListener('resize', updateFade);
+
+        window.addEventListener('scroll', function () {
+          if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+        }, { passive: true });
+        window.addEventListener('resize', update);
+        update();
+        updateFade();
+      })();
+    </script>
+
+  </body>
+
+</html>
